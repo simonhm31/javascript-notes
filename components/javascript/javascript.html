@@ -1,123 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Notes</title>
+    <link rel="icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./javascript.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaScript Notes</title>
-  <link rel="icon" href="../../favicon.ico" />
-  <link rel="stylesheet" href="../../styles.css" />
-  <link rel="stylesheet" href="./javascript.css" />
-</head>
+  <body>
+    <nav class="navbar">
+      <a class="navbar-links" href="../home/index.html">
+        <h2>Home</h2>
+      </a>
+      <a class="navbar-links" href="../javascript/javascript.html">
+        <h3>JavaScript</h3>
+      </a>
+      <a class="navbar-links" href="../front-end-js/front-end-js.html">
+        <h3>Front End JavaScript</h3>
+      </a>
+      <a class="navbar-links" href="../code-editor/code-editor.html">
+        <h3>Code Editor</h3>
+      </a>
+    </nav>
 
-<body>
-  <nav class="navbar">
-    <a class="navbar-links" href="../home/index.html">
-      <h2>Home</h2>
-    </a>
-    <a class="navbar-links" href="../javascript/javascript.html">
-      <h3>JavaScript</h3>
-    </a>
-    <a class="navbar-links" href="../front-end-js/front-end-js.html">
-      <h3>Front End JavaScript</h3>
-    </a>
-    <a class="navbar-links" href="../code-editor/code-editor.html">
-      <h3>Code Editor</h3>
-    </a>
-  </nav>
-
-  <div class="notes-section">
-    <div class="subtitle">
-      <h1 id="subtitle-heading">JavaScript</h1>
-      <div class="subsubtitle">
-        <h2>Variables</h2>
-        <div class="text">
-          <p>
+    <div class="notes-section">
+      <div class="subtitle">
+        <h1 id="subtitle-heading">JavaScript</h1>
+        <div class="subsubtitle">
+          <h2>Variables</h2>
+          <div class="text">
             Three ways to declare variables in JS:
-          <ol>
-            <li><code>var name = `john`;</code></li>
-            <li><code>let name = `john`;</code></li>
-            <li><code>const name = `john`;</code></li>
-          </ol>
-          <ul>
-            <li><code>var</code> is not used anymore</li>
-            <li><code>let</code> variables can be reassigned</li>
-            <li><code>const</code> variables can never be reassigned</li>
-          </ul>
-          </p>
-        </div>  
-        <h2>Data Types</h2>
-        <div class="text">
-          <ul>
-            <li>
-             Data types are attributes associated with a piece of data that tells a computer system how to interpret its value
-            </li>
-            <li>
-              You can find the data type of a variable using <code>typeof</code>
-            </li>
-          </ul>
-          <table>
-            <thead>
-              <tr>
-                <th>Primitive Data Type</th>
-                <th>Example</th> 
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><code>string</code></td>
-                <td><code>let name = `john`</code></td>
-              </tr>
-              <tr>
-                <td><code>number</code></td>
-                <td><code>let age = 42.3;</code></td>
-              </tr>
-              <tr>
-                <td><code>Boolean</code></td>
-                <td><code>let isGoodAtCoding = true;</code></td>
-              </tr>
-              <tr>
-                <td><code>Object</code></td>
-                <td><code>let person = {firstName: "joe", lastName = "mama"}</code></td>
-              </tr>
-              <tr>
-                <td><code>Array object</code></td>
-                <td><code>const cars = ["Saab", "Volvo", "BMW"];</code></td>
-              </tr>
-              <tr>
-                <td><code>Date object</code></td>
-                <td><code></code></td>
-           
-              </tr>
-   
-            </tbody>
-          </table>
-
-        </div>
-        <div class="text">
-          <p>
-            Scoping:
+            <ol>
+              <li><code>var name = `john`;</code></li>
+              <li><code>let name = `john`;</code></li>
+              <li><code>const name = `john`;</code></li>
+            </ol>
             <ul>
-              <li><code>var</code> is function scoped</li>
-              <li><code>let</code> and <code>const</code> are block scoped</li>
+              <li><code>var</code> is not used anymore</li>
+              <li><code>let</code> variables can be reassigned</li>
+              <li><code>const</code> variables can never be reassigned</li>
             </ul>
-          </p>
-        </div>
-      </div>
-      <div class="subsubtitle">
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <div class="text">
-        </div>
-      </div>
-      <div class="subsubtitle">
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <div class="text">
-          <p>
+          </div>
+          <h2>Data Types</h2>
+          <div class="text">
+            <ul>
+              <li>
+                Data types are attributes associated with a piece of data that
+                tells a computer system how to interpret its value
+              </li>
+              <li>
+                You can find the data type of a variable using
+                <code>typeof</code>
+              </li>
+              <li>
+                Two types of data types: <code>primitive types</code> and
+                <code>reference types</code>
+              </li>
+            </ul>
+            <table>
+              <thead>
+                <tr>
+                  <th>Primitive Data Type</th>
+                  <th>Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>string</code></td>
+                  <td><code>let name = `john`</code></td>
+                </tr>
+                <tr>
+                  <td><code>number</code></td>
+                  <td><code>let age = 42.3;</code></td>
+                </tr>
+                <tr>
+                  <td><code>Boolean</code></td>
+                  <td><code>let isGoodAtCoding = true;</code></td>
+                </tr>
+                <tr>
+                  <td><code>undefined</code></td>
+                  <td><code>let person = undefined;</code></td>
+                </tr>
+                <tr>
+                  <td><code>null</code></td>
+                  <td><code>let person = null;</code></td>
+                </tr>
+                <tr>
+                  <td><code>symbol</code></td>
+                  <td><code>I dont know what the heck this does</code></td>
+                </tr>
+              </tbody>
+            </table>
 
-          </p>
+            <ul>
+              <li>Check data type with <code>typeof</code> keyword</li>
+              <li><code>console.log(typeof "420")</code></li>
+              <li><code>console.log(typeof 420)</code></li>
+            </ul>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Reference Data Type</th>
+                  <th>Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>string</code></td>
+                  <td><code>let name = `john`</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="subsubtitle">
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <div class="text"></div>
+        </div>
+        <div class="subsubtitle">
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <div class="text">
+            <p></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
