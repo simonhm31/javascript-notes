@@ -119,7 +119,6 @@
         <div class="subsubtitle">
           <h2>Operators</h2>
           <div class="text">
-            <h3>Comparison Operators:</h3>
             <table>
               <thead>
                 <tr>
@@ -204,9 +203,48 @@
                 </tr>
               </thead>
               <tr>
-                <td><code>&gt</code></td>
-                <td><code>greater than or equal to</code></td>
+                <td><code>console.log(5 > 5)</code></td>
+                <td><code>false</code></td>
               </tr>
+              <tr>
+                <td><code>console.log(5 >= 5)</code></td>
+                <td><code>true</code></td>
+              </tr>
+              <tr>
+                <td><code>console.log(5 < 5)</code></td>
+                <td><code>false</code></td>
+              </tr>
+              <tr>
+                <td><code>console.log(5 <= '5')</code></td>
+                <td><code>true</code></td>
+              </tr>
+            </table>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Logical Operators</th>
+                  <th>Name</th>
+                  <th>Definition</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>&&</code></td>
+                  <td>Logical And</td>
+                  <td>returns the value of the first falsy element found when reading from left to right, if none returns last element  </td>
+                </tr>
+                <tr>
+                  <td><code>||</code></td>
+                  <td>Logical Or</td>
+                  <td>returns the value of the first falsy element found when reading from left to right, if none returns last element  </td>
+                </tr>
+                <tr>
+                  <td><code>!</code></td>
+                  <td>Not</td>
+                  <td>returns the value of the first falsy element found when reading from left to right, if none returns last element  </td>
+                </tr>
+              </tbody>
             </table>
 
 
