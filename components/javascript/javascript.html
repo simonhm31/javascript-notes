@@ -119,12 +119,57 @@
         <div class="subsubtitle">
           <h2>Operators</h2>
           <div class="text">
-            <p>Equality Operators:</p>
-            <ul>
-              <li>There are two equality operators: </li>
-              <li><code>===</code>: equal value and equal type</li>
-              <li><code>==</code>: equal value, not necessarily equal type</li>
-            </ul>
+            <h3>Comparison Operators:</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Equality Operator</th>
+                  <th>Definition</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>===</code></td>
+                  <td><code>strict equality, same value and same type</code></td>
+                </tr>
+                <tr>
+                  <td><code>==</code></td>
+                  <td><code>same value, not necessarily same type</code></td>
+                </tr>
+                <tr>
+                  <td><code>!=</code></td>
+                  <td><code>opposite of <code>==</code></code></td>
+                </tr>
+                <tr>
+                  <td><code>!==</code></td>
+                  <td><code>opposite of <code>===</code></code></td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>input</th>
+                  <th>output</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>console.log(5 == '5')</code></td>
+                  <td><code>true</code></td>
+                </tr>
+                <tr>
+                  <td><code>console.log(5 === '5')</code></td>
+                  <td><code>false</code></td>
+                </tr>
+                <tr>
+                  <td><code>console.log(5 != '5')</code></td>
+                  <td><code>false</code></td>
+                </tr>
+                <tr>
+                  <td><code>console.log(5 !== '5')</code></td>
+                  <td><code>true</code></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         <div class="subsubtitle">
