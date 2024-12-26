@@ -232,17 +232,17 @@
                 <tr>
                   <td><code>&&</code></td>
                   <td>Logical And</td>
-                  <td>returns the value of the first falsy element found when reading from left to right, if none returns last element  </td>
+                  <td>returns true if all operands are true</td>
                 </tr>
                 <tr>
                   <td><code>||</code></td>
                   <td>Logical Or</td>
-                  <td>returns the value of the first falsy element found when reading from left to right, if none returns last element  </td>
+                  <td>returns true if one or more operands is true</td>
                 </tr>
                 <tr>
                   <td><code>!</code></td>
                   <td>Not</td>
-                  <td>returns the value of the first falsy element found when reading from left to right, if none returns last element  </td>
+                  <td>changes true to false and false to true</td>
                 </tr>
               </tbody>
               <thead>
@@ -253,16 +253,28 @@
               </thead>
               <tbody>
                 <tr>
-                  <td colspan="2">sdgf</td>
-                  <td colspan="2">sdgf</td>
+                  <td colspan="2"><code>console.log(false && true)</code></td>
+                  <td colspan="2"><code>false</code></td>
                 </tr>
                 <tr>
-                  <td colspan="2">sdgf</td>
-                  <td colspan="2">sdgf</td>
+                  <td colspan="2"><code>console.log(7 && 8 && 0</code>)</td>
+                  <td colspan="2"><code>0</code> - <i>7, 8 are truthy, 0 is falsy. && returns first falsy value</i></td>
                 </tr>
                 <tr>
-                  <td colspan="2">sdgf</td>
-                  <td colspan="2">sdgf</td>
+                  <td colspan="2"><code>console.log(false || true)</code></td>
+                  <td colspan="2"><code>true</code></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><code>console.log(0 || 7 || 8)</code></td>
+                  <td colspan="2"><code>7</code> - <i>0 is falsy, 7,8 are truthy. || returns first truthy value</i></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><code>console.log(!true)</code></td>
+                  <td colspan="2"><code>false</code></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><code>console.log(!(0 || 7 || 8))</code></td>
+                  <td colspan="2"><code>false</code>, <i>(0 || 7 || 8) is truthy and !true is false</i></td>
                 </tr>
               </tbody>
             </table>
